@@ -233,8 +233,6 @@ def die_commit(msg, commit):
 
 
 def main():  # noqa: C901
-    die("THIS SHOULD FAIL!")
-
     repo = pygit2.Repository(repo_path)
 
     user = os.environ.get("AUR_USER")
